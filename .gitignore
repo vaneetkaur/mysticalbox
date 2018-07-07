@@ -1,0 +1,6 @@
+*.log
+node_modules
+npm-debug.log
+newrelic_agent.log
+npm-debug.log.*
+dist/

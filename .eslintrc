@@ -1,0 +1,53 @@
+{
+  "extends": ["airbnb", "plugin:import/errors"],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+    "fetch": true
+  },
+  "plugins": ["babel", "mocha"],
+  "rules": {
+    "max-len": 0,
+    "no-tabs": 2,
+    "mocha/no-exclusive-tests": 2,
+    "mocha/handle-done-callback": 2,
+    "mocha/no-global-tests": 2,
+    "mocha/no-skipped-tests": 1,
+    "mocha/no-pending-tests": 1,
+    "import/default": 0,
+    "generator-star-spacing": 0,
+    "babel/generator-star-spacing": 2,
+    "new-cap": 0,
+    "babel/new-cap": [2, {"capIsNew": false, "capIsNewExceptions": ["express.Router"]}],
+    "array-bracket-spacing": 0,
+    "babel/array-bracket-spacing": 2,
+    "function-paren-newline": 0,
+    "object-curly-spacing": 0,
+    "object-shorthand": 0,
+    "babel/object-shorthand": 2,
+    "arrow-parens": 0,
+    "babel/arrow-parens": 2,
+    "no-await-in-loop": 0,
+    "babel/no-await-in-loop": 2,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "no-underscore-dangle": "off",
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": { "consistent": true },
+        "ObjectPattern": { "consistent": true },
+        "ImportDeclaration": { "consistent": true },
+        "ExportDeclaration": { "consistent": true },
+      }
+    ],
+    "no-unused-expressions": 0,
+    "react/no-danger": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }]
+  }
+}

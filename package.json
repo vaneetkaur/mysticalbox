@@ -4,7 +4,10 @@
   "description": "The magical box to store all your digital things",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "nodemon -e js,hbs --watch src/ --exec npm run start",
+    "lint": "eslint .",
+    "start": "node index.js",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,34 @@
   "bugs": {
     "url": "https://github.com/vanetkaur/mysticalbox/issues"
   },
-  "homepage": "https://github.com/vanetkaur/mysticalbox#readme"
+  "homepage": "https://github.com/vanetkaur/mysticalbox#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "babel-runtime": "^6.26.0",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "webpack": "^4.15.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-mocha": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "supertest": "^3.1.0",
+    "supertest-as-promised": "^4.0.2"
+  }
 }
