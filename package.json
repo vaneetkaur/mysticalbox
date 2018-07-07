@@ -1,0 +1,19 @@
+{
+  "name": "mysticalbox",
+  "version": "0.0.1",
+  "description": "The magical box to store all your digital things",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanetkaur/mysticalbox.git"
+  },
+  "author": "Vaneet Kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanetkaur/mysticalbox/issues"
+  },
+  "homepage": "https://github.com/vanetkaur/mysticalbox#readme"
+}
