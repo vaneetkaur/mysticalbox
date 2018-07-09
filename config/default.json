@@ -1,0 +1,10 @@
+{
+  "pg": {
+    "user": "mystical_box",
+    "database": "mystical_box",
+    "password": "",
+    "host": "localhost",
+    "port": 5432,
+    "max": 5
+  }
+}
